@@ -43,6 +43,14 @@
                         Manage Jobs</a
                     >
                 </li>
+                <li>
+                    <form method="POST" action="/logout" class="in-line">
+                    @csrf
+                    <button type="submit">
+                        <i class="fa-solid fa-door-closed"></i> Logout
+                    </button>
+                </form>
+                </li>
        @else
                 <li>
                     <a href="/register" class="hover:text-laravel"
